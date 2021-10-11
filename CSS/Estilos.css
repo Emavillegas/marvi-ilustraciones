@@ -1,0 +1,258 @@
+
+*{
+    font-family: 'Hina Mincho';
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+ol{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+li{
+    margin-left: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+nav{
+    align-items: center;
+    border: 3px solid black;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size:  45px;
+}
+
+h1:hover{
+    transition:3s;
+    font-size: 4rem;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(7, 7, 7);
+    font-size: 25px;
+
+
+}
+a:hover{
+    font-size: 28px;
+    background-color:white;
+}
+header{
+    height:35vh;
+    background-image: url(../img/mano.png);
+    background-size: contain;
+  
+
+}
+.titulosecundario{
+    text-align: center;
+}
+#main{
+    background-color: rgba(0, 0, 0, 0.801);
+}
+p{
+    font-size:20px;
+}
+.ipad{
+    width: 1000px;
+    margin-top: 20px;
+
+}
+.imagen{
+    text-align: center;
+    
+}
+
+#titulo{
+    font-size: 40px;
+    text-align: center;
+    border: 4px solid black;
+    color: rgb(216, 16, 16);
+    background-color:white;
+    
+
+}
+#titulo:hover{
+    transition:3s;
+    font-size: 3rem;
+}
+
+footer{
+    background: rgb(46,16,19);
+    background: linear-gradient(90deg, rgba(107, 97, 98, 0.073) 23%, rgb(240, 234, 236) 49%, rgba(48, 43, 44, 0.412) 88%);
+    height: 200px;
+}
+
+
+.imagen1{
+    background-image: url(../img/sobremi.png);
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+.button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+    font-size:18px;
+    box-shadow: 1px 1px black;
+}
+
+.redes{
+    width: 40px;    
+}
+.redes1{
+    margin: 5px;
+}
+
+
+
+
+
+
+
+/*  SOBRE MI */
+
+
+main{
+    display: flex;
+    background-color:rgb(248, 227, 227);
+    padding-bottom: 30px;
+}
+.imagen2{
+    width: 350px;
+}
+.sobremi{
+    background-color:rgb(248, 227, 227)
+}
+.text{
+    margin: 20px;
+}
+
+
+/* trabajos */
+.trabajos{
+    background-color:rgb(248, 227, 227)
+}
+.portfolio{
+    width: 250px;
+    margin: 5px;
+    height: 300px;
+}
+#contenedor{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+    "foto1 foto1 foto1"
+    "foto2 foto3 foto4"
+    "foto5 foto5 foto5"
+    "foto6 foto6 foto6";
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color:rgb(248, 227, 227)
+
+}
+#foto1{
+    grid-area: foto1;
+    justify-self: center;
+    background-color: aqua;
+}
+#foto2{
+    grid-area: foto2;
+}
+#foto3{
+    grid-area: foto3;
+    justify-self: left;
+}
+#foto4{
+    grid-area: foto4;
+}
+#foto5{
+    grid-area: foto5;
+    justify-self:center;
+}
+#foto6{
+    grid-area: foto6;
+}
+
+@media all and (min-width:768px) {
+
+    #contenedor {
+    grid-template-areas:
+    "foto1 foto1 foto1"
+    "foto2 foto3 foto4"
+    "foto5 foto5 foto5"
+    "foto6 foto6 foto6";
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+     }
+
+    #foto1 {
+        grid-area: foto1;
+        justify-self: end;
+        background-color: antiquewhite;
+    }
+    
+}
+
+@media all and (min-width:992px) {
+    #contenedor {
+    grid-template-areas:
+    "foto1 foto1 foto1"
+    "foto2 foto3 foto4"
+    "foto5 foto5 foto5"
+    "foto6 foto6 foto6";
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+    }
+
+    #foto4{
+        grid-area: foto4;
+        background-color: #000;
+        justify-self:center
+        
+    }
+    
+}
+
+
+
+
+.formulario{
+    margin-top: 15px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 5px;;
+}
+
+#item{
+    margin: 10px;
+    height: 30px;
+    width: 80%;
+}
+
+#mensaje{
+    margin: 10px;
+    width: 80%;
+}
+
+.contacto{
+    text-align:center;
+}
+.contactos{
+    background: rgb(46,16,19);
+    background: linear-gradient(90deg, rgba(46,16,19,0.07326680672268904) 23%, rgba(173,126,144,1) 49%, rgba(139,18,53,0.41220238095238093) 88%);
+}
